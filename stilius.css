@@ -1,0 +1,55 @@
+html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+#turinys {
+  text-align: left;
+  color: blue;
+  border-bottom:  inherit;
+  
+}
+/*p {
+  text-align: left;
+  color: green;
+} */
+
+.nuotrauka {
+  width: 25%;
+  float: right;
+}
+
+
+img {
+  width:40% !important;
+  float: left;
+}
+
+header > h1 {
+	font-style: italic;
+}
+header h1 {
+	font-size: 40px;
+	text-align: center;
+	color: red;
+}
+
+body {
+  background-color: lightblue;
+}
+article > table, th, td {
+	border: 1px solid black;
+	padding: 5px;
+}
+*[href^="https://en.wikipedia.org"] {
+	font-weight: bold;
+}
+body { font-size: 10pt }
+article {
+	border-bottom: 5px solid red;
+}
+
+@media (max-width:629px) {
+  img{
+    display: none;
+  }
+}

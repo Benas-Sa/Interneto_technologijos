@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mano portfolio!</title>
+	<link rel="stylesheet" href="stilius.css" type="text/css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script type="text/javascript" src="backend.js"></script>
+
+</head>
+<body>
+  <h1> <img src="https://arekmarkowicz.pl/res/img/ed/Marek-Rytlewski-Transprojekt-Gdanski-sesja%20bizesowa-Gdansk/arekmarkowiczpl-Marek-Rytlewski-Transprojekt-Gdanski-sesja%20bizesowa-oferta-Gdansk.jpg" alt="Mano nuotrauka" class="nuotrauka"></h1>
+  <header>
+	<hgroup>
+		<h1>Mano portfolio!</h1>
+		<h2>Petras Petrauskas</h2>
+	</hgroup>
+  </header>
+  
+  <nav>
+  <a href="https://en.wikipedia.org/wiki/Special:Random/User">Apie mane straipsnis!</a> <br>
+  <a href="https://en.wikipedia.org/wiki/Special:Random/Portal">Mano darbas!</a> <br>
+  <a href="https://en.wikipedia.org/wiki/Special:Random/Book">Mano knyga!</a>
+  </nav>
+  
+  <article>
+	<p>paragrafas numeris vienas</p>
+	<p id="antrasParagrafas">paragrafas numeris du</p>
+	<p>paragrafas numeris trys</p>
+	
+	<button type="button" id="TurinioKeitimas">3.1 turinio keitimo reikalavimas</button><br>
+	<button type="button" id="StiliausKeitimas">3.2 stiliaus keitimo reikalavimas</button><br>
+	Paragrafo id: <input id="paragrafoId" type="text" name="paragrafoId">
+	<button type="button" id="TurinioTrynimas">3.3 Turinio istrinimo reikalavimas</button><br>
+	Tekstas kuri norite prideti: <input id="TekstoLaukas" type="text" name="TekstoLaukas">
+	<button type="button" id="TurinioPridejimas">3.4 Turinio pridejimo reikalavimas</button><br>
+  
+	<p id="turinys">As esu fotografas, dizaineris......</p>
+	<h2>Mano privalumai</h2>
+	<ul>
+		<li>Padarau darbus laiku</li>
+		<li>Atsiduodu darbui</li>
+		<li>Turiu sukaupes didele patirti</li>
+		</ul>
+	<p>Taip pat mokausi HTMl</p>
+	<h2>Darbo patirtis</h2>
+
+	<table>
+		<tr>
+			<th rowspan="2">Metu suma</th>
+			<th colspan="2">Darbo patirtis</th>
+		</tr>
+		<tr>
+			<th>Puslapiu dizainas</th>
+			<th>Architektura</th>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>7 M.</td>
+			<td>5 M.</td>
+		</tr>
+		</table>
+
+	<h2>Kvalifikacijos</h2>
+  
+	<SELECT name="manoMeniu" id="kvalifikacijos">
+			<OPTION value="f">Fotografas</OPTION>
+			<OPTION value="d">Dizaineris</OPTION>
+			<OPTION value="a">Architektas</OPTION>
+			<OPTION value="t">Tapytojas</OPTION>
+		</SELECT> <br>
+
+  
+  <h2>SUSISIEKITE!</h2>
+	
+	<form name="forma"  class="formosKlase" action="rezultatas.html" method="post" onsubmit="return validateNotEmpty()">
+		Vardas: <input type="text" id="vardas" name="vardas" pattern="[a-zA-Z]*"><br> 
+		Telefono Numeris: <input type="text" id="numeris" name="numeris"><br>
+		Data:   <input type="text" id="data" name="data" placeholder="yyyy-mm-dd"><br>
+		<label>
+			<input type="radio" name="lytis" value="V"> vyras
+		</label>
+		<br>
+		<label>
+			<input type="radio" name="lytis" value="M"> moteris
+		</label>
+		<br>
+		<input type="submit" value="Siųsti">
+		<input type="reset" value="Ištrinti" id="istrinti">
+	</form>
+
+	<form class="postForma" name="registracijosForma" onsubmit="return false;">
+		<label for="vardoLaukelis">Vardas:</label>
+		<input type="text" id="vardoLaukelis" name="vardoLaukelis"/>
+		<label for="pavardesLaukelis">Pavarde:</label>
+		<input type="text" id="pavardesLaukelis" name="pavardesLaukelis"/><br>
+		<button type="submit">POST</button>
+
+	</form>	
+
+	<h4>Response from server</h4>
+	<table id="atsakymai">
+		<tr>
+			<th>vardas</th>
+			<th>pavarde</th>
+		</tr>
+	</table>	
+
+	
+	</article>
+	
+
+</body>
+
+</html>
