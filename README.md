@@ -27,7 +27,10 @@ o	ID
 6.	Sukurtoje stilių lentelėje turi būti kaskadų mechanizmo pavyzdys, būtina prasmingai panaudoti raktinį žodį !important (ištrynus šį raktinį žodį, vaizdas ekrane turi pasikeisti), bei žinoti, ką jis reiškia ir kas yra tas kaskadų mechanizmas
 7.	Reikia panaudoti @media taisyklę, kurios pagalba naršyklė atsižvelgtų į įrenginio, kuriame yra atvaizduojamas puslapis ekrano dydį ir atitinkimai pakeistų jo išdėstymą (Media Queries Level 3)
  
+ 
+ 
 IV UŽDUOTIS JavaScript
+
 Reikia sukurti HTML puslapį, kuriame būtų bent viena duomenų įvedimo forma ir bent viena lentelė. Tuomet atskirame JavaScript faile reikia parašyti skriptus, kuriuose būtų realizuotas:
 1.	Formos laukų validavimas:
 o	Įvedimo laukas, kuriame kažkas turi būti įvesta (kuris negali būti paliktas tuščias)
